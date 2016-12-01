@@ -1,4 +1,4 @@
-function boton(){
+function botoia(){
     var checkbox = document.getElementById("onartu").checked;
     var botoia = document.getElementById("bidali");
     if(checkbox){
@@ -9,15 +9,16 @@ function boton(){
     }
 }
 
-function erregistratu(f) {
+function erregistratu(f){
     var erabiltzailea = f.izena.value;
     var pasahitza = f.pasahitza.value;
+
     var errorea = "";
 
-    if (izena == "") {
+    if (erabiltzailea == "") {
         errorea += " - Erabiltzailea eremua bete behar duzu.\n";
     }
-    if (iruzkina == "") {
+    if (pasahitza == "") {
         errorea += " - Iruzkina eremua bete behar duzu.\n";
     }
     if (errorea != "") {
@@ -27,6 +28,4 @@ function erregistratu(f) {
     else {
         return true;
     }
-}
-
 }
