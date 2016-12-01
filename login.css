@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Alola';
+    src: local('Revue'),
+    url(resources/fonts/Revue.ttf) format('ttf');
+}
+
+body{
+    background-image: url("resources/img/login_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+#izenburua
+{
+    font-family: Alola, Serif;
+}
+
+
+div.multzoa{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin: 0 0 0 -180px;
+    text-align: center;
+    border: 3px solid #d4d4d4;
+    background-color: #e8e8e8;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+input{
+    width: 320px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+button{
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+}
