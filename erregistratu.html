@@ -11,14 +11,10 @@
     <div class="multzoa">
         <h1 id="izenburua">Alolagram</h1>
         <form action="erregistratu.php" method="post">
-            <input type="text" class="bete" name="izena" placeholder="Erabiltzailea"/>
-            <br/><br/>
-            <input type="password" class="bete" name="pasahitza" placeholder="Pasahitza"/>
-            <br/><br/>
-            <input type="password" class="bete" name="pasahitza_2" placeholder="Pasahitza egiaztatu"/>
-            <br/><br/>
-            <input type="checkbox" id="onartu" onchange="botoia();"></input><label for="onartu">Erabiltzeko baldintzak onartzen ditut.</label>
-            <br/><br/>
+            <input type="text" class="bete" name="izena" placeholder="Erabiltzailea"/><br/><br/>
+            <input type="password" class="bete" name="pasahitza" placeholder="Pasahitza"/><br/><br/>
+            <input type="password" class="bete" name="pasahitza_2" placeholder="Pasahitza egiaztatu"/><br/><br/>
+            <input type="checkbox" id="onartu" onchange="botoia();"></input><label for="onartu">Erabiltzeko baldintzak onartzen ditut.</label><br/><br/>
             <button type="submit" id="bidali" disabled="true" onclick="return erregistratu(this.form);">Erregistratu</button>
         </form>
     </div>
