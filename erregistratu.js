@@ -12,6 +12,7 @@ function botoia(){
 function erregistratu(f){
     var erabiltzailea = f.izena.value;
     var pasahitza = f.pasahitza.value;
+    var pasahitza_2 = f.pasahitza_2.value;
 
     var errorea = "";
 
@@ -20,6 +21,9 @@ function erregistratu(f){
     }
     if (pasahitza == "") {
         errorea += " - Iruzkina eremua bete behar duzu.\n";
+    }
+    if (pasahitza != pasahitza_2){
+        errorea += " - Sartutako pasahitza ez da berdina.\n";
     }
     if (errorea != "") {
         alert("Formularioa ez duzu ondo bete:\n" + errorea);
