@@ -21,6 +21,13 @@
 
         $erabiltzaile_guztiak->asXML($DATU_BASEA);
 
+        $domxml = new DOMDocument('1.0');
+        $domxml->preserveWhiteSpace = false;
+        $domxml->formatOutput = true;
+        /* @var $xml SimpleXMLElement */
+        $domxml->loadXML($erabiltzaile_guztiak->asXML());
+        $domxml->save($DATU_BASEA);
+
         $dena_ondo = true;
     }
 
@@ -31,7 +38,7 @@
         $libre = true;
 
         foreach ($erabiltzaile_guztiak->children() as $erabiltzaile_bat){
-            if ($erabiltzaile_bat['izena'] == $erabiltzailea) {
+            if (($erabiltzaile_bat->izena) == $erabiltzailea) {
                 $libre = false;
             }
         }
@@ -50,9 +57,19 @@
         echo "<button type=\"submit\" id=\"bidali\" disabled=\"true\" onclick=\"return erregistratu(this.form);\">Erregistratu</button>";
         echo "</form>";
         echo "</div>";
-        echo "<script type='text/javascript'>alert('$msg');</script>";
+        echo "<script type='text/javascript'>alert('Zure erabiltzailea sortu da.');</script>";
     }else{
-
+        echo "<div class=\"multzoa\">";
+        echo " <h1 id=\"izenburua\">Alolagram</h1>";
+        echo "<form action=\"erregistratu.php\" method=\"post\">";
+        echo "<input type=\"text\" class=\"bete\" name=\"izena\" placeholder=\"Erabiltzailea\"/><br/><br/>";
+        echo "<input type=\"password\" class=\"bete\" name=\"pasahitza\" placeholder=\"Pasahitza\"/><br/><br/>";
+        echo "<input type=\"password\" class=\"bete\" name=\"pasahitza_2\" placeholder=\"Pasahitza egiaztatu\"/><br/><br/>";
+        echo " <input type=\"checkbox\" id=\"onartu\" onchange=\"botoia();\"></input><label for=\"onartu\">Erabiltzeko baldintzak onartzen ditut.</label><br/><br/>";
+        echo "<button type=\"submit\" id=\"bidali\" disabled=\"true\" onclick=\"return erregistratu(this.form);\">Erregistratu</button>";
+        echo "</form>";
+        echo "</div>";
+        echo "<script type='text/javascript'>alert('Erabiltzaile hori hartuta dago dagoeneko.');</script>";
     }
 
 

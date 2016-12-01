@@ -17,10 +17,18 @@
 
     $zuzena = false;
 
-    //BUSCAR EL USUARIO DENTRO DE LA DATUBASE
+    $erabiltzaile_guztiak = simplexml_load_file($DATU_BASEA);
+    foreach ($erabiltzaile_guztiak->children() as $erabiltzaile_bat){
+        if ((($erabiltzaile_bat->izena) == $erabiltzailea) && (($erabiltzaile_bat->pasahitza) == $pasahitza)) {
+            $zuzena = true;
+        }
+    }
+
 
     if($zuzena){
-        header("Location: /alola.html");
+        session_start();
+        $_SESSION["erabiltzailea"] = $erabiltzailea;
+        header("Location: alola.html");
         die();
     }
     else{
