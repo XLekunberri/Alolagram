@@ -1,12 +1,12 @@
 body {
     margin: 0px;
-    background-image: url("resources/img/login_background.jpg");
+    background-image: url("../resources/img/login_background.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
 }
 
-.mapa{
+#mapa{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -16,4 +16,14 @@ body {
     background-color: #e8e8e8;
     padding: 15px;
     border-radius: 15px;
+}
+
+div.poke img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#poke1{
+    margin: -150px 0px 0px -150px;
 }

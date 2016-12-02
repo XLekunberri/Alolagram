@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Alola';
     src: local('Revue'),
-    url(resources/fonts/Revue.ttf) format('ttf');
+    url(../resources/fonts/Revue.ttf) format('ttf');
 }
 
 body{
-    background-image: url("resources/img/login_background.jpg");
+    background-image: url("../resources/img/login_background.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
@@ -15,7 +15,6 @@ body{
 {
     font-family: Alola, Serif;
 }
-
 
 div.multzoa{
     position: absolute;
@@ -29,8 +28,7 @@ div.multzoa{
     border-radius: 15px;
 }
 
-
-input{
+.bete{
     width: 320px;
     height: 40px;
     padding: 5px;
@@ -38,7 +36,7 @@ input{
 }
 
 button{
-    width: 90px;
+    width: 100px;
     height: 40px;
     border-radius: 5px;
 }
