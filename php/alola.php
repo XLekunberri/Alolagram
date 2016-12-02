@@ -8,9 +8,15 @@
     <script type="text/javascript" src="../js/alola.js"></script>
 </head>
 <body>
+    <?php
+    session_start();
+        if(!isset($_SESSION["erabiltzailea"])) {
+            echo "<script type='text/javascript'>window.location = \"index.php\";</script>";
+        }
+    ?>
     <img src="../resources/img/alola_map.jpg" width="860" height="480" id="mapa">
     <div class="poke">
-        <a href="../php/gallery.php?id=001"><img src="../resources/img/pokeball.png" width="16" height="16" id="poke1"></a>
+        <a href="gallery.php?id=001"><img src="../resources/img/pokeball.png" width="16" height="16" id="poke1"></a>
     </div>
 </body>
 </html>

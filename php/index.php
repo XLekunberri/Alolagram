@@ -37,7 +37,8 @@ if(isset($_POST["izena"]) && isset($_POST["pasahitza"])) {
     if ($zuzena) {
         session_start();
         $_SESSION["erabiltzailea"] = $erabiltzailea;
-        echo "<script type='text/javascript'>window.location = \"../html/alola.html\";</script>";
+        header("Location: alola.php");
+        exit();
     }
     else{
         echo "<script type='text/javascript'>alert('Erabiltzailea edo pasahitza ez da zuzena');</script>";
