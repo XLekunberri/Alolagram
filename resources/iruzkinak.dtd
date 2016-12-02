@@ -1,7 +1,0 @@
-<!ELEMENT iruzkinak (idazlea,iruzkina)*>
-        <!ELEMENT idazlea (izena, irudia, data, iruzkina)>
-        <!ELEMENT iruzkinlaria (izena, irudia, data, iruzkina)>
-        <!ELEMENT izena (#PCDATA)>
-        <!ELEMENT irudia (#PCDATA)>
-        <!ELEMENT data (#PCDATA)>
-        <!ELEMENT iruzkina (#PCDATA)>

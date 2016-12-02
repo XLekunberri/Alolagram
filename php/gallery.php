@@ -10,34 +10,67 @@
 <body>
     <div class="nagusi">
     <?php
+    session_start();
     $id = $_GET['id'];
     $erabiltzailea = $_SESSION['erabiltzailea'];
-    $helbidea = '../resources/img/gallery/';
 
     //Argazkia gehitu
-    echo "<img src='$helbidea$id.png' id=argazkia'>";
+    echo "<img src='../resources/img/gallery/$helbidea$id.png' id=argazkia'>";
 
-    iruzkinakGehitu($id, $helbidea);
 
-    function iruzkinakGehitu($id, $helbidea){
-        echo '<div class="'.'iruzkinak'.'">';
+    testuaGehitu($id);
+
+    function testuaGehitu($id){
+
+
+        echo "<div class='testua'>";
+
+        $iruzkinak = simplexml_load_file("../xml/gallery/$id.xml");
 
         //Idazlea gehitu
+        idazleaGehitu($iruzkinak);
+
+        //Pertsonen iruzkinak gehitu
+        iruzkinakGehitu($iruzkinak);
+
+        echo "</div>";
     }
 
-    function libre_dago($erabiltzailea){
-        global $DATU_BASEA;
+    function idazleaGehitu($db){
+        echo "<div class='egilea'>";
 
-        $erabiltzaile_guztiak = simplexml_load_file($DATU_BASEA);
-        $libre = true;
+        $izena = $db['izena'];
+        $irudia = $db['irudia'];
+        $data = $db['data'];
+        $iruzkina = $db['iruzkina'];
 
-        foreach ($erabiltzaile_guztiak->children() as $erabiltzaile_bat){
-            if (($erabiltzaile_bat->izena) == $erabiltzailea) {
-                $libre = false;
-            }
+        echo "$izena</br>";
+        echo "$data</br>";
+        echo "$iruzkina";
+
+        echo "</div>";
+    }
+
+    function iruzkinakGehitu($db){
+
+        echo "<div class='iruzkinak'>";
+
+        foreach($db->children() as $elem){
+            echo "<div class='iruzkina'>";
+
+            $izena = $elem->izena;
+            $irudia = $elem->irudia;
+            $data = $elem->data;
+            $iruzkina = $elem->iruzkina;
+
+            echo "$izena</br>";
+            echo "$data</br>";
+            echo "$iruzkina";
+
+            echo "</div>";
         }
 
-        return($libre);
+        echo "</div>";
     }
 
     ?>
