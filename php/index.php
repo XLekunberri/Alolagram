@@ -17,7 +17,6 @@
         <a href="erregistratu.php">Erregistratu</a>
     </form>
 </div>
-
 <?php
 if(isset($_POST["izena"]) && isset($_POST["pasahitza"])) {
     $DATU_BASEA = '../xml/erabiltzaileak.xml';
