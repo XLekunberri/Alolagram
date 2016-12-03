@@ -14,8 +14,8 @@
         <input type="text" name="izena" placeholder="Erabiltzailea"/><br/><br/>
         <input type="password" name="pasahitza" placeholder="Pasahitza"/><br/><br/>
         <button type="submit"  onclick="return logeatu(this.form);">Sartu</button><br/><br/>
-        <a href="erregistratu.php">Erregistratu</a>
     </form>
+    <a href="erregistratu.php">Erregistratu</a>
 </div>
 <?php
 if(isset($_POST["izena"]) && isset($_POST["pasahitza"])) {
@@ -25,6 +25,7 @@ if(isset($_POST["izena"]) && isset($_POST["pasahitza"])) {
     $pasahitza = $_POST["pasahitza"];
 
     $zuzena = false;
+    $avatar = 1;
 
     $erabiltzaile_guztiak = simplexml_load_file($DATU_BASEA);
 

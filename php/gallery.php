@@ -14,7 +14,7 @@
     if(!isset($_SESSION['erabiltzailea'])){
         echo "<script type='text/javascript'>window.location = \"login.php\";</script>";
     }
-    elseif(!isset($_GET['id'])){
+    elseif(!isset($_GET['id']) || $_GET['id'] != "1"){
         echo "<script type='text/javascript'>window.location = \"alola.php\";</script>";
     }
     else {
@@ -23,16 +23,9 @@
         $iruzkinak = simplexml_load_file("../xml/gallery/$id.xml");
 
         //Argazkia gehitu
-        echo "<img src='../resources/img/gallery/$id.png' id=\"argazkia\" alt='eevee' usemap=\"#poke\">";
+        echo "<img src='../resources/img/gallery/$id.png' id=\"argazkia\">";
 
-        $oy = $iruzkinak['oy'];
-        $xo = $iruzkinak['xo'];
-
-        echo "<map name=\"poke\">";
-        echo "<area shape=\"rect\" coords=\"$oy,$xo\">";
-        echo "</map>";
-
-       infoGehitu($id);
+        infoGehitu($id);
 
         testuaGehitu($id);
     }
@@ -64,15 +57,15 @@
         $irudia = $db['irudia'];
         $data = $db['data'];
         $iruzkina = $db['iruzkina'];
-        echo "<div class=avatar>";
+        echo "<div class='avatar'>";
         echo "<img src=\"../resources/img/avatars/$irudia.png\"/>";
         echo "</div>";
-        echo "<div class=text>";
-        echo "<div class=text_burua>";
+        echo "<div class='text'>";
+        echo "<div class='text_burua'>";
         echo "$izena";
         echo " - $data</br>";
         echo "</div>";
-        echo "<div class=text_gorputza>";
+        echo "<div class='text_gorputza'>";
         echo "$iruzkina";
         echo "</div>";
         echo "</div>";
@@ -93,15 +86,15 @@
             $iruzkina = htmlspecialchars($elem->iruzkina);
 
 
-            echo "<div class=avatar>";
+            echo "<div class='avatar'>";
             echo "<img src=\"../resources/img/avatars/$irudia.png\"/>";
             echo "</div>";
-            echo "<div class=text>";
-            echo "<div class=text_burua>";
+            echo "<div class='text'>";
+            echo "<div class='text_burua'>";
             echo "$izena";
             echo " - $data</br>";
             echo "</div>";
-            echo "<div class=text_gorputza>";
+            echo "<div class='text_gorputza'>";
             echo "$iruzkina";
             echo "</div>";
             echo "</div>";

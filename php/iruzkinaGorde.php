@@ -9,6 +9,8 @@ $helbidea = "../xml/gallery/$id.xml";
 $iruzkinak = simplexml_load_file($helbidea);
 $iruzkinlaria = $iruzkinak->addChild('iruzkinlaria');
 
+$av = random_int(1,5);
+
 $iruzkinlaria->addChild('izena', $_SESSION["erabiltzailea"]);
 $iruzkinlaria->addChild('irudia', $_SESSION["avatar"]);
 $iruzkinlaria->addChild('data', $data);
