@@ -12,10 +12,14 @@ body{
 }
 
 div.nagusi{
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
-    margin: -220px 0 0 -445px;
+    margin-left: -445px;
+    margin-top: 100px;
+    height: auto;
+    width: 0px;
+
 }
 
 #argazkia{
@@ -23,11 +27,19 @@ div.nagusi{
     background-color: #e8e8e8;
     padding: 15px;
     border-radius: 15px;
-    float:left;
 }
 
-.testua {
+div.testua {
     font-family: Alola, Serif;
+    width: 513px;
+    height: auto;
+    border: 3px solid #d4d4d4;
+    background-color: #e8e8e8;
+    padding: 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: 0%;
+    left: 456px;
 }
 
 div.egilea {
@@ -40,9 +52,13 @@ div.egilea {
 div.iruzkinak {
     background-color: #d3d3d3;
     width: 500px;
-    height: 220px;
+    height: 185px;
     overflow: auto;
     padding: 5px;
+}
+
+textarea {
+    resize: none;
 }
 
 button{
@@ -51,17 +67,12 @@ button{
     border-radius: 4px;
 }
 
-div.testua {
-    width: 513px;
-    height: auto;
+div.info{
     border: 3px solid #d4d4d4;
     background-color: #e8e8e8;
     padding: 15px;
     border-radius: 15px;
-    float:left;
-    margin-left: 20px;
-}
-
-div.info{
-    display: none;
+    width: 400px;
+    height: 55px;
+    margin-top: 10px;
 }
