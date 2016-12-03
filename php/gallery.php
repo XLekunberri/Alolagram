@@ -14,7 +14,7 @@
     if(!isset($_SESSION['erabiltzailea'])){
         echo "<script type='text/javascript'>window.location = \"login.php\";</script>";
     }
-    elseif(!isset($_GET['id']) || $_GET['id'] != "1"){
+    elseif(!isset($_GET['id']) || $_GET['id'] > "5"){
         echo "<script type='text/javascript'>window.location = \"alola.php\";</script>";
     }
     else {
@@ -23,7 +23,7 @@
         $iruzkinak = simplexml_load_file("../xml/gallery/$id.xml");
 
         //Argazkia gehitu
-        echo "<img src='../resources/img/gallery/$id.png' id=\"argazkia\">";
+        echo "<img src='../resources/img/gallery/$id.png' id=\"argazkia\" width='399' height='239'>";
 
         infoGehitu($id);
 
@@ -132,7 +132,9 @@
         }
 
         echo "<div class='info'>";
+        echo "<div width='64' height='55'>";
         echo "<img src='../resources/img/gallery/$id.gif' id=\"gif\">";
+        echo "</div>";
         echo "<div class=\"n\">Nº $n</div>";
         echo "<div class=\"izena\">$izena</div>";
         echo "<div class=\"pisua\">$pisua</div>";

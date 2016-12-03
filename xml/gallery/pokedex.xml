@@ -7,4 +7,20 @@
         <tipo1>normal</tipo1>
         <tipo2></tipo2>
     </pokemon>
+    <pokemon id="002">
+        <n>782</n>
+        <izena>Jangmo-o</izena>
+        <pisua>29,7Kg</pisua>
+        <altuera>0,6m</altuera>
+        <tipo1>dragon</tipo1>
+        <tipo2></tipo2>
+    </pokemon>
+    <pokemon id="003">
+        <n>772</n>
+        <izena>Rowlet</izena>
+        <pisua>1,5Kg</pisua>
+        <altuera>0,3m</altuera>
+        <tipo1>planta</tipo1>
+        <tipo2>volador</tipo2>
+    </pokemon>
 </pokedex>
