@@ -23,7 +23,7 @@ div.nagusi{
     background-color: #e8e8e8;
     padding: 15px;
     border-radius: 15px;
-    float:left; /* add this */
+    float:left;
 }
 
 .testua {
@@ -58,6 +58,10 @@ div.testua {
     background-color: #e8e8e8;
     padding: 15px;
     border-radius: 15px;
-    float:left; /* add this */
+    float:left;
     margin-left: 20px;
+}
+
+div.info{
+    display: none;
 }

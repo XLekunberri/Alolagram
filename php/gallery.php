@@ -20,20 +20,29 @@
     else {
         $id = $_GET['id'];
         $erabiltzailea = $_SESSION['erabiltzailea'];
+        $iruzkinak = simplexml_load_file("../xml/gallery/$id.xml");
 
         //Argazkia gehitu
-        echo "<img src='../resources/img/gallery/$helbidea$id.png' id=\"argazkia\">";
+        echo "<img src='../resources/img/gallery/$helbidea$id.png' id=\"argazkia\" alt='eevee' usemap=\"#poke\">";
 
+        $oy = $iruzkinak['oy'];
+        $xo = $iruzkinak['xo'];
+
+        echo "<map name=\"poke\">";
+        echo "<area shape=\"rect\" coords=\"$oy,$xo\" onclick=\"show('info')\">";
+        echo "</map>";
+
+        echo "<div class='info'>";
+        echo "<img src='../resources/img/gallery/$helbidea$id.gif' id=\"gif\">";
+        echo "</div>";
 
         testuaGehitu($id);
     }
     function testuaGehitu($id)
     {
-
-
         echo "<div class='testua'>";
 
-        $iruzkinak = simplexml_load_file("../xml/gallery/$id.xml");
+        global $iruzkinak;
 
         //Idazlea gehitu
         idazleaGehitu($iruzkinak);
@@ -43,8 +52,8 @@
         //Pertsonen iruzkinak gehitu
         iruzkinakGehitu($iruzkinak);
 
-        //Iruzzkinak idazteko tokia gehitu
-        textfieldGehitu();
+        //Iruzkinak idazteko tokia gehitu
+        textfieldGehitu($id);
 
         echo "</div>";
     }
@@ -89,9 +98,10 @@
         echo "</div>";
     }
 
-    function textfieldGehitu(){
+    function textfieldGehitu($id){
         echo "<div class='idazteko'>";
         echo "<form action=\"iruzkinaGorde.php\" method=\"post\">";
+        echo "<input type=\"hidden\" name=\"id\" value=\"$id\">";
         echo "<textarea name=\"iruzkina\" rows=\"3\" cols=\"71\" placeholder=\"Idatz ezazu zure iruzkina hemen\"></textarea><br>";
         echo "<button type=\"submit\"  onclick=\"return iruzkinaGorde(this.form);\">Bidali</button>";
         echo "</form>";
