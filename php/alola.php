@@ -18,5 +18,14 @@
     <div class="poke">
         <a href="gallery.php?id=001"><img src="../resources/img/pokeball.png" width="16" height="16" id="poke1"></a>
     </div>
+    <div class="poke">
+        <a href="gallery.php?id=002"><img src="../resources/img/pokeball.png" width="16" height="16" id="poke2"></a>
+    </div>
+    <div class="poke">
+        <a href="gallery.php?id=003"><img src="../resources/img/pokeball.png" width="16" height="16" id="poke3"></a>
+    </div>
+    <div class="poke">
+        <a href="gallery.php?id=004"><img src="../resources/img/pokeball.png" width="16" height="16" id="poke4"></a>
+    </div>
 </body>
 </html>
