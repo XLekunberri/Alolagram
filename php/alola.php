@@ -5,7 +5,6 @@
     <title>Alolagram</title>
     <link rel="shortcut icon" type="image/x-icon" href="../resources/img/favicon.ico"/>
     <link rel="stylesheet" href="../css/alola.css" type="text/css"/>
-    <script type="text/javascript" src="../js/alola.js"></script>
 </head>
 <body>
     <?php
