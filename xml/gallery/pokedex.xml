@@ -1,0 +1,10 @@
+<pokedex>
+    <pokemon id="001">
+        <n>133</n>
+        <izena>Eevee</izena>
+        <pisua>6,5Kg</pisua>
+        <altuera>0,3m</altuera>
+        <tipo1>normal</tipo1>
+        <tipo2></tipo2>
+    </pokemon>
+</pokedex>

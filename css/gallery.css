@@ -37,16 +37,27 @@ div.testua {
     background-color: #e8e8e8;
     padding: 15px;
     border-radius: 15px;
-    position: absolute;
-    top: 0%;
-    left: 456px;
+    position: relative;
+    left: 197px;
+    bottom: 377px;
 }
 
 div.egilea {
-    width: 500px;
-    height: auto;
-    overflow: auto;
+    width: 25em;
+    height: 70px;
+    word-wrap: break-word;
     padding: 5px;
+}
+
+div.egilea_text{
+    position: relative;
+    left: 74px;
+    bottom: 64px;
+}
+
+div.egilea_text_gorputza{
+    position: relative;
+    top: 15px;
 }
 
 div.iruzkinak {
@@ -68,6 +79,7 @@ button{
 }
 
 div.info{
+    font-family: Alola, Serif;
     border: 3px solid #d4d4d4;
     background-color: #e8e8e8;
     padding: 15px;
@@ -75,4 +87,41 @@ div.info{
     width: 400px;
     height: 55px;
     margin-top: 10px;
+}
+
+div.n{
+    position: relative;
+    left: 80px;
+    bottom: 55px;
+}
+
+div.izena{
+    position: relative;
+    left: 80px;
+    bottom: 45px;
+    font-size: 200%;
+}
+
+div.pisua{
+    position: relative;
+    left: 220px;
+    bottom: 96px;
+}
+
+div.altuera{
+    position: relative;
+    left: 340px;
+    bottom: 110px;
+}
+
+div.tipo1{
+    position: relative;
+    left: 240px;
+    bottom:90px;
+}
+
+div.tipo2{
+    position: relative;
+    left: 70px;
+    bottom: 18px;
 }

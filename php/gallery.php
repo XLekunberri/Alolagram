@@ -12,7 +12,7 @@
     <?php
     session_start();
     if(!isset($_SESSION['erabiltzailea'])){
-        echo "<script type='text/javascript'>window.location = login.php;</script>";
+        echo "<script type='text/javascript'>window.location = \"login.php\";</script>";
     }
     elseif(!isset($_GET['id'])){
         echo "<script type='text/javascript'>window.location = \"alola.php\";</script>";
@@ -23,18 +23,16 @@
         $iruzkinak = simplexml_load_file("../xml/gallery/$id.xml");
 
         //Argazkia gehitu
-        echo "<img src='../resources/img/gallery/$helbidea$id.png' id=\"argazkia\" alt='eevee' usemap=\"#poke\">";
+        echo "<img src='../resources/img/gallery/$id.png' id=\"argazkia\" alt='eevee' usemap=\"#poke\">";
 
         $oy = $iruzkinak['oy'];
         $xo = $iruzkinak['xo'];
 
         echo "<map name=\"poke\">";
-        echo "<area shape=\"rect\" coords=\"$oy,$xo\" onclick=\"show('info')\">";
+        echo "<area shape=\"rect\" coords=\"$oy,$xo\">";
         echo "</map>";
 
-        echo "<div class='info'>";
-        echo "<img src='../resources/img/gallery/$helbidea$id.gif' id=\"gif\">";
-        echo "</div>";
+       infoGehitu($id);
 
         testuaGehitu($id);
     }
@@ -66,10 +64,18 @@
         $irudia = $db['irudia'];
         $data = $db['data'];
         $iruzkina = $db['iruzkina'];
-
+        echo "<div class=egilea_avatar>";
+        echo "<img src=\"../resources/img/avatars/$irudia.png\"/>";
+        echo "</div>";
+        echo "<div class=egilea_text>";
+        echo "<div class=egilea_text_burua>";
         echo "$izena";
         echo " - $data</br>";
+        echo "</div>";
+        echo "<div class=egilea_text_gorputza>";
         echo "$iruzkina";
+        echo "</div>";
+        echo "</div>";
 
         echo "</div>";
     }
@@ -105,6 +111,37 @@
         echo "<textarea name=\"iruzkina\" rows=\"3\" cols=\"71\" placeholder=\"Idatz ezazu zure iruzkina hemen\"></textarea><br>";
         echo "<button type=\"submit\"  onclick=\"return iruzkinaBalidatu(this.form);\">Bidali</button>";
         echo "</form>";
+        echo "</div>";
+    }
+
+    function infoGehitu($id){
+
+        $pokedex = simplexml_load_file("../xml/gallery/pokedex.xml");
+
+        foreach ($pokedex->children() as $pokemon) {
+            if($pokemon["id"]=="$id"){
+                $n = $pokemon->n;
+                $izena = $pokemon->izena;
+                $pisua = $pokemon->pisua;
+                $altuera = $pokemon->altuera;
+                $tipo1 = $pokemon->tipo1;
+                $tipo2 = $pokemon->tipo2;
+            }
+        }
+
+        echo "<div class='info'>";
+        echo "<img src='../resources/img/gallery/$id.gif' id=\"gif\">";
+        echo "<div class=\"n\">Nº $n</div>";
+        echo "<div class=\"izena\">$izena</div>";
+        echo "<div class=\"pisua\">$pisua</div>";
+        echo "<div class=\"altuera\">$altuera</div>";
+        echo "<div class=\"tipo1\"><img src=\"../resources/img/gallery/types/$tipo1.png\"</div>";
+        if($tipo2 != "") {
+            echo "<div class=\"tipo2\"><img src=\" ../resources/img/gallery/types/$tipo2.png\"</div>";
+        }
+        else{
+            echo "<div class=\"tipo2\"><img src=\" ../resources/img/gallery/types/notype.png\"</div>";
+        }
         echo "</div>";
     }
     ?>
