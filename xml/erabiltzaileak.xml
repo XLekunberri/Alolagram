@@ -3,9 +3,11 @@
   <erabiltzailea>
     <izena>Xabiier</izena>
     <pasahitza>1234</pasahitza>
+    <irudia>3</irudia>
   </erabiltzailea>
   <erabiltzailea>
     <izena>Tiza</izena>
     <pasahitza>a</pasahitza>
+    <irudia>1</irudia>
   </erabiltzailea>
 </erabiltzaileak>

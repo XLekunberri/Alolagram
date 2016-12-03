@@ -9,6 +9,7 @@ body{
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
+    overflow-y: hidden;
 }
 
 div.nagusi{
@@ -19,6 +20,7 @@ div.nagusi{
     margin-top: 100px;
     height: auto;
     width: 0px;
+
 
 }
 
@@ -45,17 +47,16 @@ div.testua {
 div.egilea {
     width: 25em;
     height: 70px;
-    word-wrap: break-word;
-    padding: 5px;
+    padding: 2px;
 }
 
-div.egilea_text{
+div.text{
     position: relative;
     left: 74px;
     bottom: 64px;
 }
 
-div.egilea_text_gorputza{
+div.text_gorputza{
     position: relative;
     top: 15px;
 }
@@ -65,6 +66,12 @@ div.iruzkinak {
     width: 500px;
     height: 185px;
     overflow: auto;
+    padding: 5px;
+}
+
+div.iruzkina{
+    width: 25em;
+    height: 70px;
     padding: 5px;
 }
 

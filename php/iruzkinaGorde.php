@@ -10,7 +10,7 @@ $iruzkinak = simplexml_load_file($helbidea);
 $iruzkinlaria = $iruzkinak->addChild('iruzkinlaria');
 
 $iruzkinlaria->addChild('izena', $_SESSION["erabiltzailea"]);
-$iruzkinlaria->addChild('irudia', '1');
+$iruzkinlaria->addChild('irudia', $_SESSION["avatar"]);
 $iruzkinlaria->addChild('data', $data);
 $iruzkinlaria->addChild('iruzkina', $iruzkina);
 

@@ -64,15 +64,15 @@
         $irudia = $db['irudia'];
         $data = $db['data'];
         $iruzkina = $db['iruzkina'];
-        echo "<div class=egilea_avatar>";
+        echo "<div class=avatar>";
         echo "<img src=\"../resources/img/avatars/$irudia.png\"/>";
         echo "</div>";
-        echo "<div class=egilea_text>";
-        echo "<div class=egilea_text_burua>";
+        echo "<div class=text>";
+        echo "<div class=text_burua>";
         echo "$izena";
         echo " - $data</br>";
         echo "</div>";
-        echo "<div class=egilea_text_gorputza>";
+        echo "<div class=text_gorputza>";
         echo "$iruzkina";
         echo "</div>";
         echo "</div>";
@@ -87,15 +87,24 @@
 
         foreach ($db->children() as $elem) {
             echo "<div class='iruzkina'>";
-
             $izena = $elem->izena;
             $irudia = $elem->irudia;
             $data = $elem->data;
             $iruzkina = htmlspecialchars($elem->iruzkina);
 
+
+            echo "<div class=avatar>";
+            echo "<img src=\"../resources/img/avatars/$irudia.png\"/>";
+            echo "</div>";
+            echo "<div class=text>";
+            echo "<div class=text_burua>";
             echo "$izena";
             echo " - $data</br>";
+            echo "</div>";
+            echo "<div class=text_gorputza>";
             echo "$iruzkina";
+            echo "</div>";
+            echo "</div>";
 
             echo "</div>";
             echo "<hr/>";

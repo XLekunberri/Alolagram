@@ -31,12 +31,14 @@ if(isset($_POST["izena"]) && isset($_POST["pasahitza"])) {
     foreach ($erabiltzaile_guztiak->children() as $erabiltzaile_bat) {
         if ((($erabiltzaile_bat->izena) == $erabiltzailea) && (($erabiltzaile_bat->pasahitza) == $pasahitza)) {
             $zuzena = true;
+            $avatar = $erabiltzaile_bat->irudia;
         }
     }
 
     if ($zuzena) {
         session_start();
         $_SESSION["erabiltzailea"] = $erabiltzailea;
+        $_SESSION["avatar"] = $avatar;
         header("Location: alola.php");
         exit();
     }
