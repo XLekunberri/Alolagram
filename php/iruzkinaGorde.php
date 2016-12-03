@@ -9,10 +9,10 @@ $helbidea = "../xml/gallery/$id.xml";
 $iruzkinak = simplexml_load_file($helbidea);
 $iruzkinlaria = $iruzkinak->addChild('iruzkinlaria');
 
-$iruzkinlaria->addChild('izena', $_SESSION['izena']);
+$iruzkinlaria->addChild('izena', $_SESSION['erabiltzailea']);
 $iruzkinlaria->addChild('irudia', '1');
 $iruzkinlaria->addChild('data', $data);
-$iruzkinlaria->addChild('iruzkina', $iruzina);
+$iruzkinlaria->addChild('iruzkina', $iruzkina);
 
 $iruzkinak->asXML($helbidea);
 
