@@ -1,7 +1,7 @@
 <?php
 session_start();
 $id=$_POST['id'];
-$iruzkina=$_POST['iruzkina'];
+$iruzkina=htmlspecialchars($_POST['iruzkina']);
 $data=date('d/m/Y');
 
 $helbidea = "../xml/gallery/$id.xml";

@@ -103,7 +103,7 @@
         echo "<form action=\"iruzkinaGorde.php\" method=\"post\">";
         echo "<input type=\"hidden\" name=\"id\" value=\"$id\">";
         echo "<textarea name=\"iruzkina\" rows=\"3\" cols=\"71\" placeholder=\"Idatz ezazu zure iruzkina hemen\"></textarea><br>";
-        echo "<button type=\"submit\"  onclick=\"return iruzkinaGorde(this.form);\">Bidali</button>";
+        echo "<button type=\"submit\"  onclick=\"return iruzkinaBalidatu(this.form);\">Bidali</button>";
         echo "</form>";
         echo "</div>";
     }
