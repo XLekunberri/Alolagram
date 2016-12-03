@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Alola';
+    src: local('Revue'),
+    url(../resources/fonts/Revue.ttf) format('ttf');
+}
+
+body{
+    background-image: url("../resources/img/login_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+#titulua{
+    position: absolute;
+    left: 30%;
+}
+
+.testua{
+    position:relative;
+    font-family: Alola, Serif;
+    font-size: 22px;
+    color: #000000;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    text-decoration: none;
+}
+#kontua{
+    position:absolute;
+    right:5%;
+    margin: 0 0 0 -180px;
+    text-align: center;
+    border: 3px solid #d4d4d4;
+    background-color: rgba(232,232,232,0.5);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.argazkia{
+    position:absolute;
+    height:200px;
+    left:5%;
+}
+
+#bellosom{
+    width:300px;
+    bottom:5%;
+}
+
+#ocean{
+    top:20%;
+}
+
+#azalpena{
+    position:absolute;
+    top: 35%;
+    right:3%;
+    width:780px;
+    text-align: center;
+    border: 3px solid #d4d4d4;
+    background-color: rgba(232,232,232,0.5);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#azalpena p{
+    text-align:left;
+    font-family: Alola;
+    line-height: 18pt;
+}
+
+
