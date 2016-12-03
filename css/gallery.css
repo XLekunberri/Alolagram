@@ -132,3 +132,7 @@ div.tipo2{
     left: 70px;
     bottom: 18px;
 }
+
+textarea{
+    background-color: rgba(256,256,256,0.7);
+}
