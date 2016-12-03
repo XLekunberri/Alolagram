@@ -85,7 +85,7 @@
             $izena = $elem->izena;
             $irudia = $elem->irudia;
             $data = $elem->data;
-            $iruzkina = $elem->iruzkina;
+            $iruzkina = htmlspecialchars($elem->iruzkina);
 
             echo "$izena";
             echo " - $data</br>";
