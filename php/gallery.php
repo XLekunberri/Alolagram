@@ -12,7 +12,7 @@
     <?php
     session_start();
     if(!isset($_SESSION['erabiltzailea'])){
-        echo "<script type='text/javascript'>window.location = \"index.php\";</script>";
+        echo "<script type='text/javascript'>window.location = login.php;</script>";
     }
     elseif(!isset($_GET['id'])){
         echo "<script type='text/javascript'>window.location = \"alola.php\";</script>";

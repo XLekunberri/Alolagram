@@ -10,7 +10,7 @@
     <?php
     session_start();
         if(!isset($_SESSION["erabiltzailea"])) {
-            echo "<script type='text/javascript'>window.location = \"index.php\";</script>";
+            echo "<script type='text/javascript'>window.location = login.php;</script>";
         }
     ?>
     <img src="../resources/img/alola_map.jpg" width="860" height="480" id="mapa">

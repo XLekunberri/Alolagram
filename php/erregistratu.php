@@ -60,7 +60,7 @@ if(isset($_POST["izena"]) && isset($_POST["pasahitza"])) {
 
     if ($dena_ondo) {
         echo "<script type='text/javascript'>alert('Zure erabiltzailea sortu da.');</script>";
-        echo "<script type='text/javascript'>window.location = \"index.php\";</script>";
+        echo "<script type='text/javascript'>window.location = lologin.php/script>";
     } else {
         echo "<script type='text/javascript'>alert('Erabiltzaile hori hartuta dago dagoeneko.');</script>";
     }
