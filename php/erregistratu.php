@@ -64,6 +64,7 @@ if(isset($_POST["izena"]) && isset($_POST["pasahitza"])) {
     } else {
         echo "<script type='text/javascript'>alert('Erabiltzaile hori hartuta dago dagoeneko.');</script>";
     }
+
 }
 ?>
 </body>
