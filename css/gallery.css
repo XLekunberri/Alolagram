@@ -22,8 +22,9 @@ body{
 
     position: relative;
     left: 50%;
+    top: 50%;
     margin-left: -500px;
-    margin-top: 150px;
+    margin-top: 230px;
 }
 
 
