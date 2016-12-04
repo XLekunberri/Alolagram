@@ -20,7 +20,7 @@
         $id = $_GET['id'];
         $erabiltzailea = $_SESSION['erabiltzailea'];
         $iruzkinak = simplexml_load_file("../xml/gallery/$id.xml");
-        $MAX_IRUZKIN = 50;
+        $MAX_IRUZKIN = 100;
 
         echo "<div id=\"marco\">";
 
