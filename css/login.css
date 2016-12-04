@@ -34,13 +34,12 @@ input{
     width: 320px;
     height: 40px;
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 button{
     width: 90px;
     height: 40px;
-    border-radius: 5px;
 }
 
 input[type="text"], input[type="password"]{

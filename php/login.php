@@ -39,7 +39,6 @@ if(isset($_POST["izena"]) && isset($_POST["pasahitza"])) {
     if ($zuzena) {
         session_start();
         $_SESSION["erabiltzailea"] = $erabiltzailea;
-        $_SESSION["avatar"] = $avatar;
         header("Location: alola.php");
         exit();
     }

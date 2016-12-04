@@ -8,3 +8,4 @@ function iruzkinaBalidatu(f){
         return true;
     }
 }
+

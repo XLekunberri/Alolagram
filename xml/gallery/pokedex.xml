@@ -23,4 +23,12 @@
         <tipo1>planta</tipo1>
         <tipo2>volador</tipo2>
     </pokemon>
+    <pokemon id="004">
+        <n>778</n>
+        <izena>Mimikyu</izena>
+        <pisua>0,7Kg</pisua>
+        <altuera>0,2m</altuera>
+        <tipo1>fantasma</tipo1>
+        <tipo2>hada</tipo2>
+    </pokemon>
 </pokedex>

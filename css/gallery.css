@@ -9,56 +9,73 @@ body{
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
-    overflow-y: hidden;
 }
 
-div.nagusi{
+#marco{
+    border: 3px solid #d4d4d4;
+    background-color: rgba(232,232,232,0.5);
+    padding: 15px;
+    border-radius: 15px;
+
+    width: 1000px;
+    height: 460px;
+
     position: relative;
-    top: 50%;
     left: 50%;
-    margin-left: -445px;
-    margin-top: 100px;
-    height: auto;
-    width: 0px;
-
-
+    margin-left: -500px;
+    margin-top: 150px;
 }
+
+
 
 #argazkia{
+    position: absolute;
+    margin-top: 45px;
+
     border: 3px solid #d4d4d4;
     background-color: rgba(232,232,232,0.5);
     padding: 15px;
     border-radius: 15px;
 }
 
-div.testua {
+#x{
+    position: absolute;
+    margin-left: 968px;
+}
+
+div.tabloia {
     font-family: Alola, Serif;
+
+    position: absolute;
+    margin-left: 451px;
+    margin-top: 42px;
+
     width: 513px;
     height: auto;
+
     border: 3px solid #d4d4d4;
     background-color: rgba(232,232,232,0.5);
     padding: 15px;
     border-radius: 15px;
-    position: relative;
-    left: 197px;
-    bottom: 377px;
 }
 
 div.egilea {
     width: 25em;
     height: 70px;
-    padding: 2px;
+    padding: 5px;
+    word-wrap: break-word;
 }
 
-div.text{
-    position: relative;
-    left: 74px;
-    bottom: 64px;
+div.egilea_text{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 70px;
 }
 
-div.text_gorputza{
-    position: relative;
-    top: 15px;
+div.egilea_text_gorputza{
+    position: absolute;
+    margin-top: 5px;
+    width: 25em;
 }
 
 div.iruzkinak {
@@ -71,66 +88,83 @@ div.iruzkinak {
 
 div.iruzkina{
     width: 25em;
-    height: 70px;
+    height: auto;
     padding: 5px;
+    margin-bottom: 20px;
+}
+
+div.iruzkina_text{
+    margin-top: -70px;
+    margin-left: 70px;
+}
+
+div.iruzkina_text_gorputza{
+    margin-top: 5px;
+    width: 25em;
+    word-wrap: break-word;
 }
 
 textarea {
     resize: none;
+    width: 505px;
+    height: 50px;
 }
 
 button{
     width: 513px;
     height: 40px;
-    border-radius: 4px;
 }
 
 div.info{
+    position: absolute;
+    margin-top: 350px;
+
+    width: 400px;
+    height: 55px;
+
     font-family: Alola, Serif;
     border: 3px solid #d4d4d4;
     background-color: rgba(232,232,232,0.5);
     padding: 15px;
     border-radius: 15px;
-    width: 400px;
-    height: 55px;
-    margin-top: 10px;
 }
 
 div.n{
-    position: relative;
-    left: 80px;
-    bottom: 55px;
+    position: absolute;
+    margin-left: 75px;
+    margin-top: -55px;
 }
 
 div.izena{
-    position: relative;
-    left: 80px;
-    bottom: 45px;
+    position: absolute;
+    margin-left: 75px;
+    margin-top: -35px;
+
     font-size: 200%;
 }
 
 div.pisua{
-    position: relative;
-    left: 220px;
-    bottom: 96px;
+    position: absolute;
+    margin-left: 230px;
+    margin-top: -55px;
 }
 
 div.altuera{
-    position: relative;
-    left: 340px;
-    bottom: 110px;
+    position: absolute;
+    margin-left: 340px;
+    margin-top: -55px;
 }
 
 div.tipo1{
-    position: relative;
-    left: 240px;
-    bottom:90px;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -15px;
 }
 
 div.tipo2{
-    position: relative;
-    left: 70px;
-    bottom: 18px;
+    position: absolute;
+    margin-left: 65px;
+    margin-top: -21px;
 }
 
 textarea{

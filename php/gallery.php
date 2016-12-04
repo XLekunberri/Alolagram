@@ -8,7 +8,6 @@
     <script type="text/javascript" src="../css/gallery.js"></script>
 </head>
 <body>
-<div class="nagusi">
     <?php
     session_start();
     if(!isset($_SESSION['erabiltzailea'])){
@@ -22,16 +21,22 @@
         $erabiltzailea = $_SESSION['erabiltzailea'];
         $iruzkinak = simplexml_load_file("../xml/gallery/$id.xml");
 
-        //Argazkia gehitu
-        echo "<img src='../resources/img/gallery/$id.png' id=\"argazkia\" width='399' height='239'>";
+        echo "<div id=\"marco\">";
+
+        echo "<img src='../resources/img/gallery/$id.png' id=\"argazkia\" width='400' height='240'>";
+
+        echo "<a href=\"alola.php\"><img src='../resources/img/gallery/x.png' id=\"x\" width='32' height='32'></a>";
+
+        testuaGehitu($id);
 
         infoGehitu($id);
 
-        testuaGehitu($id);
+        echo "</div>";
     }
+
     function testuaGehitu($id)
     {
-        echo "<div class='testua'>";
+        echo "<div class='tabloia'>";
 
         global $iruzkinak;
 
@@ -57,15 +62,15 @@
         $irudia = $db['irudia'];
         $data = $db['data'];
         $iruzkina = $db['iruzkina'];
-        echo "<div class='avatar'>";
+        echo "<div class='egilea_avatar'>";
         echo "<img src=\"../resources/img/avatars/$irudia.png\"/>";
         echo "</div>";
-        echo "<div class='text'>";
-        echo "<div class='text_burua'>";
+        echo "<div class='egilea_text'>";
+        echo "<div class='egilea_text_burua'>";
         echo "$izena";
         echo " - $data</br>";
         echo "</div>";
-        echo "<div class='text_gorputza'>";
+        echo "<div class='egilea_text_gorputza'>";
         echo "$iruzkina";
         echo "</div>";
         echo "</div>";
@@ -89,12 +94,12 @@
             echo "<div class='avatar'>";
             echo "<img src=\"../resources/img/avatars/$irudia.png\"/>";
             echo "</div>";
-            echo "<div class='text'>";
-            echo "<div class='text_burua'>";
+            echo "<div class='iruzkina_text'>";
+            echo "<div class='iruzkina_text_burua'>";
             echo "$izena";
             echo " - $data</br>";
             echo "</div>";
-            echo "<div class='text_gorputza'>";
+            echo "<div class='iruzkina_text_gorputza'>";
             echo "$iruzkina";
             echo "</div>";
             echo "</div>";
@@ -110,7 +115,7 @@
         echo "<div class='idazteko'>";
         echo "<form action=\"iruzkinaGorde.php\" method=\"post\">";
         echo "<input type=\"hidden\" name=\"id\" value=\"$id\">";
-        echo "<textarea name=\"iruzkina\" rows=\"3\" cols=\"71\" placeholder=\"Idatz ezazu zure iruzkina hemen\"></textarea><br>";
+        echo "<textarea name=\"iruzkina\" placeholder=\"Idatz ezazu zure iruzkina hemen\"></textarea><br>";
         echo "<button type=\"submit\"  onclick=\"return iruzkinaBalidatu(this.form);\">Bidali</button>";
         echo "</form>";
         echo "</div>";
@@ -132,9 +137,7 @@
         }
 
         echo "<div class='info'>";
-        echo "<div width='64' height='55'>";
         echo "<img src='../resources/img/gallery/$id.gif' id=\"gif\">";
-        echo "</div>";
         echo "<div class=\"n\">Nº $n</div>";
         echo "<div class=\"izena\">$izena</div>";
         echo "<div class=\"pisua\">$pisua</div>";
@@ -149,6 +152,5 @@
         echo "</div>";
     }
     ?>
-</div>
 </body>
 </html>

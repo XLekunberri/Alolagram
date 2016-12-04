@@ -11,51 +11,24 @@ body{
     background-attachment: fixed;
 }
 
-#titulua{
-    position: absolute;
-    left: 30%;
-}
-
-.testua{
-    position:relative;
-    font-family: Alola, Serif;
-    font-size: 22px;
-    color: #000000;
-    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-    text-decoration: none;
-}
-#kontua{
-    position:absolute;
-    right:5%;
-    margin: 0 0 0 -180px;
-    text-align: center;
-    border: 3px solid #d4d4d4;
-    background-color: rgba(232,232,232,0.5);
-    padding: 15px;
-    border-radius: 15px;
-}
-
-.argazkia{
-    position:absolute;
-    height:200px;
-    left:5%;
-}
-
-#bellosom{
-    width:300px;
-    bottom:5%;
-}
-
-#ocean{
-    top:20%;
+#pokemon{
+    position: relative;
+    left: 50%;
+    margin-left: -325px;
+    margin-top: 50px;
 }
 
 #azalpena{
-    position:absolute;
-    top: 35%;
-    right:3%;
-    width:780px;
+    font-family: Alola;
     text-align: center;
+
+    position:absolute;
+    left: 50%;
+    margin-top: 50px;
+    margin-left: -390px;
+
+    width:780px;
+
     border: 3px solid #d4d4d4;
     background-color: rgba(232,232,232,0.5);
     padding: 15px;
@@ -67,5 +40,41 @@ body{
     font-family: Alola;
     line-height: 18pt;
 }
+
+#kontua{
+    position: absolute;
+    left: 50%;
+    margin-left: -140px;
+    margin-top: 380px;
+
+    text-align: center;
+
+    width: 240px;
+    height: 30px;
+
+    border: 3px solid #d4d4d4;
+    background-color: rgba(232,232,232,0.5);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.link{
+    font-family: Alola, Serif;
+    font-size: 22px;
+    color: #000000;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    text-decoration: none;
+}
+
+#login{
+    position: absolute;
+    margin-left: -110px;
+}
+
+#erregistratu{
+    position: absolute;
+    margin-left: -10px;
+}
+
 
 

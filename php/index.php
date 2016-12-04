@@ -7,15 +7,7 @@
     <link rel="stylesheet" href="../css/index.css" type="text/css"/>
 </head>
 <body>
-<img src="../resources/img/pokemon.png" id="titulua" height="200px">
-<div id="kontua">
-    <a href="login.php" class="testua">Login</a></br></br>
-    <a href="erregistratu.php" class="testua">Erregistroa</a>
-</div>
-<div id="argazkiak">
-    <img src="../resources/img/bellosom.gif" id="bellosom" class="argazkia">
-    <img src="../resources/img/ocean.gif" id="ocean" class="argazkia">
-</div>
+<img src="../resources/img/pokemon.png" id="pokemon" height="250px">
 <div id="azalpena">
     <h1>
         Kaixo, ongi etorri Alolagram-era!
@@ -28,4 +20,8 @@
         Orrialde hau erabiltzeko logeatu behar zara zure kontuarekin; horretarako hemen goian dagoen "Login" botoian sakatu.
         Kontu bat ez baduzu, "Erregistratu" botoian sakatu pnatailaren goikaldean.
     </p>
+</div>
+<div id="kontua">
+    <a href="login.php" class="link" id="login">Login</a>
+    <a href="erregistratu.php" class="link" id="erregistratu">Erregistratu</a>
 </div>
