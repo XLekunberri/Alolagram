@@ -5,7 +5,7 @@
     <title>Alolagram</title>
     <link rel="shortcut icon" type="image/x-icon" href="../resources/img/favicon.ico"/>
     <link rel="stylesheet" href="../css/gallery.css" type="text/css"/>
-    <script type="text/javascript" src="../css/gallery.js"></script>
+    <script type="text/javascript" src="../js/gallery.js"></script>
 </head>
 <body>
     <?php
@@ -20,6 +20,7 @@
         $id = $_GET['id'];
         $erabiltzailea = $_SESSION['erabiltzailea'];
         $iruzkinak = simplexml_load_file("../xml/gallery/$id.xml");
+        $MAX_IRUZKIN = 50;
 
         echo "<div id=\"marco\">";
 
@@ -80,11 +81,13 @@
 
     function iruzkinakGehitu($db)
     {
-
+        global $MAX_IRUZKIN;
         echo "<div class='iruzkinak'>";
 
         foreach ($db->children() as $elem) {
+            global $id;
             echo "<div class='iruzkina'>";
+            $idi = $elem["id"];
             $izena = $elem->izena;
             $irudia = $elem->irudia;
             $data = $elem->data;
@@ -99,8 +102,12 @@
             echo "$izena";
             echo " - $data</br>";
             echo "</div>";
-            echo "<div class='iruzkina_text_gorputza'>";
-            echo "$iruzkina";
+            echo "<div class='iruzkina_text_gorputza' id='$idi'>";
+            if (strlen($iruzkina) <= $MAX_IRUZKIN) {
+                echo "$iruzkina";
+            }else{
+                echo(substr($iruzkina,0,$MAX_IRUZKIN).'... <a href="javascript:iruzkin_osoa(\''.$idi.'\',\''.$id.'\');" class="gehiago">[Iruzkin osoa irakurri]</a>');
+            }
             echo "</div>";
             echo "</div>";
 

@@ -104,6 +104,10 @@ div.iruzkina_text_gorputza{
     word-wrap: break-word;
 }
 
+a.gehiago{
+    font-size: 0.75em;
+}
+
 textarea {
     resize: none;
     width: 505px;
