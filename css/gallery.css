@@ -133,16 +133,20 @@ div.info{
     border-radius: 15px;
 }
 
+#gif{
+    position: absolute;
+}
+
 div.n{
     position: absolute;
     margin-left: 75px;
-    margin-top: -55px;
+
 }
 
 div.izena{
     position: absolute;
     margin-left: 75px;
-    margin-top: -35px;
+    margin-top: 20px;
 
     font-size: 200%;
 }
@@ -150,19 +154,19 @@ div.izena{
 div.pisua{
     position: absolute;
     margin-left: 230px;
-    margin-top: -55px;
+
 }
 
 div.altuera{
     position: absolute;
     margin-left: 340px;
-    margin-top: -55px;
+
 }
 
 div.tipo1{
     position: absolute;
     margin-left: 250px;
-    margin-top: -15px;
+    margin-top: 40px;
 }
 
 div.tipo2{
