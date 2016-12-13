@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<iruzkinak izena="Misty" irudia="1" data="11/10/2007" iruzkina="Kaixo jarraitzaileak! Hemen uzten dizuet argazki polit hau :)" azkenid="b2">
+<iruzkinak izena="Misty" irudia="1" data="11/10/2007" iruzkina="Kaixo jarraitzaileak! Hemen uzten dizuet argazki polit hau :)" azkenid="b3">
   <iruzkinlaria id="b0">
     <izena>Manolo</izena>
     <irudia>2</irudia>
@@ -17,5 +17,11 @@
     <irudia>1</irudia>
     <data>05/12/2016</data>
     <iruzkina>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</iruzkina>
+  </iruzkinlaria>
+  <iruzkinlaria id="b3">
+    <izena>asdf</izena>
+    <irudia>3</irudia>
+    <data>13/12/2016</data>
+    <iruzkina>manolooo</iruzkina>
   </iruzkinlaria>
 </iruzkinak>

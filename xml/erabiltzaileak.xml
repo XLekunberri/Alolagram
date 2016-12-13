@@ -14,4 +14,29 @@
     <izena>eneko</izena>
     <pasahitza>1</pasahitza>
   </erabiltzailea>
+  <erabiltzailea>
+    <izena>aaaa</izena>
+    <pasahitza>aaaa</pasahitza>
+    <irudia>3</irudia>
+  </erabiltzailea>
+  <erabiltzailea>
+    <izena>bbbb</izena>
+    <pasahitza>bbbb</pasahitza>
+    <irudia>3</irudia>
+  </erabiltzailea>
+  <erabiltzailea>
+    <izena>miau</izena>
+    <pasahitza>miau</pasahitza>
+    <irudia>3</irudia>
+  </erabiltzailea>
+  <erabiltzailea>
+    <izena>asdf</izena>
+    <pasahitza>asdf</pasahitza>
+    <irudia>3</irudia>
+  </erabiltzailea>
+  <erabiltzailea>
+    <izena>pap</izena>
+    <pasahitza>pap</pasahitza>
+    <irudia>1</irudia>
+  </erabiltzailea>
 </erabiltzaileak>

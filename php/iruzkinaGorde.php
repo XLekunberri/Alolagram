@@ -11,10 +11,20 @@ $iruzkinak = simplexml_load_file($helbidea);
 
 $idi = "b" . ((int) substr($iruzkinak['azkenid'], 1) + 1);
 
+$DATU_BASEA = '../xml/erabiltzaileak.xml';
+
+$erabiltzaile_guztiak = simplexml_load_file($DATU_BASEA);
+$avatar = 1;
+foreach ($erabiltzaile_guztiak->children() as $erabiltzaile_bat) {
+    if (($erabiltzaile_bat->izena) == $_SESSION["erabiltzailea"]) {
+        $avatar = $erabiltzaile_bat->irudia;
+    }
+}
+
 $iruzkinlaria = $iruzkinak->addChild('iruzkinlaria');
 $iruzkinlaria['id']=$idi;
 $iruzkinlaria->addChild('izena', $_SESSION["erabiltzailea"]);
-$iruzkinlaria->addChild('irudia', '1');
+$iruzkinlaria->addChild('irudia', $avatar);
 $iruzkinlaria->addChild('data', $data);
 $iruzkinlaria->addChild('iruzkina', $iruzkina);
 
@@ -30,5 +40,4 @@ $domxml->loadXML($iruzkinak->asXML());
 $domxml->save($helbidea);
 
 header("Location: ../php/gallery.php?id=$id");
-
 ?>

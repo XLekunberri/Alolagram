@@ -14,7 +14,7 @@
         <input type="text" class="bete" name="izena" placeholder="Erabiltzailea"/><br/><br/>
         <input type="password" class="bete" name="pasahitza" placeholder="Pasahitza"/><br/><br/>
         <input type="password" class="bete" name="pasahitza_2" placeholder="Pasahitza egiaztatu"/><br/><br/>
-         <input type="checkbox" id="onartu" onchange="botoia();"></input><label for="onartu">Erabiltzeko baldintzak onartzen ditut.</label><br/><br/>
+        <input type="checkbox" id="onartu" onchange="botoia();"></input><label for="onartu">Erabiltzeko baldintzak onartzen ditut.</label><br/><br/>
         <button type="submit" id="bidali" disabled="true" onclick="return erregistratu(this.form);">Erregistratu</button>
         </form>
     </div>
@@ -45,6 +45,7 @@ if(isset($_POST["izena"]) && isset($_POST["pasahitza"])) {
         $erabiltzaile_hau = $erabiltzaile_guztiak->addChild('erabiltzailea');
         $erabiltzaile_hau->addChild('izena', $_POST['izena']);
         $erabiltzaile_hau->addChild('pasahitza', $_POST['pasahitza']);
+        $erabiltzaile_hau->addChild('irudia', rand(1,5));
 
         $erabiltzaile_guztiak->asXML($DATU_BASEA);
 
@@ -59,8 +60,7 @@ if(isset($_POST["izena"]) && isset($_POST["pasahitza"])) {
     }
 
     if ($dena_ondo) {
-        echo "<script type='text/javascript'>alert('Zure erabiltzailea sortu da.');</script>";
-        echo "<script type='text/javascript'>window.location = lologin.php/script>";
+        echo "<script language='JavaScript'> window.alert('Zure erabiltzailea sortu da.');window.location.href='login.php';</script>";
     } else {
         echo "<script type='text/javascript'>alert('Erabiltzaile hori hartuta dago dagoeneko.');</script>";
     }
