@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="eu">
 <head>
-    <meta http-equiv="content-type" content="text/html" charset=UTF-8"/>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8"/>
     <title>Alolagram</title>
     <link rel="shortcut icon" type="image/x-icon" href="../resources/img/favicon.ico"/>
     <link rel="stylesheet" href="../css/alola.css" type="text/css"/>
@@ -13,7 +13,7 @@
             echo "<script type='text/javascript'>window.location = login.php;</script>";
         }
     ?>
-    <img src="../resources/img/alola_map.jpg" width="860" height="480" id="mapa">
+    <img src="../resources/img/alola_map.jpg" alt="mapa" width="860" height="480" id="mapa">
     <div class="poke">
         <a href="gallery.php?id=001"><img src="../resources/img/pokeball.png" alt="poke1" width="16" height="16" id="poke1"></a>
     </div>
