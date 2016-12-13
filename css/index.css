@@ -9,9 +9,10 @@ body{
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
-#pokemon{
+#izenburua{
     position: relative;
     left: 50%;
     margin-left: -325px;
@@ -68,11 +69,13 @@ body{
 
 #login{
     position: absolute;
+    margin-top: 5px;
     margin-left: -110px;
 }
 
 #erregistratu{
     position: absolute;
+    margin-top: 5px;
     margin-left: -10px;
 }
 

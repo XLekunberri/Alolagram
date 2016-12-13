@@ -90,6 +90,7 @@ div.iruzkinak {
 div.iruzkina{
     width: 25em;
     height: auto;
+    min-height: 45px;
     padding: 5px;
     margin-bottom: 20px;
 }
@@ -177,5 +178,5 @@ div.tipo2{
 }
 
 textarea{
-    background-color: rgba(256,256,256,0.7);
+    background-color: rgba(255,255,255,0.7);
 }

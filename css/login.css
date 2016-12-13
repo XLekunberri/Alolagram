@@ -43,5 +43,5 @@ button{
 }
 
 input[type="text"], input[type="password"]{
-    background-color: rgba(256,256,256,0.7);
+    background-color: rgba(255,255,255,0.7);
 }
