@@ -80,10 +80,9 @@ body{
 }
 
 #validator{
-    position: relative;
-    left: 100%;
-    margin-left: -100px;
-    margin-top: 470px;
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
 }
 
 #html{
