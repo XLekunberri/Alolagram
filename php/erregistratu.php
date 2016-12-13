@@ -14,8 +14,8 @@
         <input type="text" class="bete" name="izena" placeholder="Erabiltzailea"/><br/><br/>
         <input type="password" class="bete" name="pasahitza" placeholder="Pasahitza"/><br/><br/>
         <input type="password" class="bete" name="pasahitza_2" placeholder="Pasahitza egiaztatu"/><br/><br/>
-        <input type="checkbox" id="onartu" onchange="botoia();"></input><label for="onartu">Erabiltzeko baldintzak onartzen ditut.</label><br/><br/>
-        <button type="submit" id="bidali" disabled="true" onclick="return erregistratu(this.form);">Erregistratu</button>
+        <input type="checkbox" id="onartu" onchange="botoia();"><label for="onartu">Erabiltzeko baldintzak onartzen ditut.</label><br/><br/>
+        <button type="submit" id="bidali" disabled="disabled" onclick="return erregistratu(this.form);">Erregistratu</button>
         </form>
     </div>
 <?php
