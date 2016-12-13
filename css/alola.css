@@ -36,3 +36,14 @@ div.poke img {
 #poke4{
     margin: -5px 0px 0px 310px;
 }
+
+#validator{
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+}
+
+#html{
+    position: absolute;
+    margin-left: -98px;
+}

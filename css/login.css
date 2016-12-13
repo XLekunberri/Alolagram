@@ -45,3 +45,14 @@ button{
 input[type="text"], input[type="password"]{
     background-color: rgba(255,255,255,0.7);
 }
+
+#validator{
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+}
+
+#html{
+    position: absolute;
+    margin-left: -98px;
+}
