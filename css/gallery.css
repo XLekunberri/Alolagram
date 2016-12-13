@@ -185,6 +185,7 @@ textarea{
     position: fixed;
     right: 0%;
     bottom: 0%;
+    margin-bottom: 4px;
 }
 
 #html{
