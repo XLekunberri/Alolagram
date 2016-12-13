@@ -20,6 +20,7 @@
     </div>
 <?php
 
+
 function libre_dago($erabiltzailea){
     global $DATU_BASEA;
 
