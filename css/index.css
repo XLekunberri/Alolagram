@@ -79,5 +79,17 @@ body{
     margin-left: -10px;
 }
 
+#validator{
+    position: relative;
+    left: 100%;
+    margin-left: -100px;
+    margin-top: 470px;
+}
+
+#html{
+    position: absolute;
+    margin-left: -98px;
+}
+
 
 
