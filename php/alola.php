@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="eu">
 <head>
-    <meta content="text/html" charset="UTF-8"/>
+    <meta charset="UTF-8"/>
     <title>Alolagram</title>
     <link rel="shortcut icon" type="image/x-icon" href="../resources/img/favicon.ico"/>
     <link rel="stylesheet" href="../css/alola.css" type="text/css"/>
